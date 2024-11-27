@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+   
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #f6f1f7;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 900px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+    margin-top: 20px;
+}
+
+form input, form textarea, form button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+/* Enfoque y Hover en Inputs */
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form input, form textarea {
+    background-color: #f9f9f9;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+}
+
+/* Botón de agregar artículo */
+form button {
+    background-color: #c790c3;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form button:hover {
+    background-color: #f0d5f0;
+}
+
+
+/* Estilo de los artículos */
+#articulosContainer {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que los artículos se acomoden en varias filas si es necesario */
+    gap: 10px;  /* Espacio de 10px (aproximadamente 1 cm) entre los artículos */
+    justify-content: center;  /* Centra los artículos */
+    width: 100%;
+    margin-top: 40px;
+}
+
+.articulo {
+    background-color: #f1dff1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    width: 170px;  /* Ancho de cada cuadro de artículo */
+    height: 200px; /* Altura de cada cuadro de artículo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articulo:hover {
+    transform: translateY(-5px);
+}
+
+.articulo h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+}
+
+.articulo p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.articulo p span {
+    font-weight: bold;
+}
+
+.articulo .precio {
+    color: #e74c3c;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.articulo .stock {
+    color: #2ecc71;
+    font-size: 14px;
+}
+
+.articulo .descripcion {
+    margin-top: 10px;
+    color: #7f8c8d;
+}
+
+/* Estilos para el header y el contenedor de artículos */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
