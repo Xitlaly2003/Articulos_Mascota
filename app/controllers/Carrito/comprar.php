@@ -28,7 +28,7 @@ try {
     if (!preg_match('/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/', $fecha_hora)) {
         throw new Exception("El formato de fecha y hora no es válido: $fecha_hora");
     }
-    $impuesto = 0.18; // Suponemos un 18% de impuesto
+    $impuesto = 0.18;
     $total = array_reduce($carrito, function ($sum, $item) {
         return $sum + ($item['precio_venta'] * $item['cantidad']);
     }, 0);

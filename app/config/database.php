@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 $user = 'root';
-$password = '';
+$password = 'admin';
 $db = 'integrador';
 
 $conn = new mysqli($host, $user, $password, $db);
